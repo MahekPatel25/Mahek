@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Wanderly Travels</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+     <a class="logo" href="index.html"><img src="images/favicon.jpg" alt="logo" /> Wanderly</a>
+        
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-hero" aria-label="About banner">
+      <!-- Large background image via CSS -->
+      <div class="about-overlay container">
+        <h1>About Wanderly</h1>
+        <p class="lead">We believe travel transforms perspective — we help you choose journeys that matter.</p>
+      </div>
+    </section>
+
+    <section class="container about-sections fade-in">
+      <div class="grid-2">
+        <article>
+          <h2>Mission</h2>
+          <p>To connect travellers with authentic experiences while supporting local communities.</p>
+        </article>
+        <article>
+          <h2>Vision</h2>
+          <p>To be the trusted guide for memorable and sustainable travel plans worldwide.</p>
+        </article>
+      </div>
+
+      <div class="why-choose">
+        <h2>Why Choose Us</h2>
+        <ul>
+          <li>Handpicked destinations & local insights</li>
+          <li>Practical tips and safety guides</li>
+          <li>User-friendly itineraries for every budget</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year2"></span> Wanderly Travels</p>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year2').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
