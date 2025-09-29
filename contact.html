@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • Wanderly Travels</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="images/favicon.jpg" alt="logo" /> Wanderly</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container contact fade-in">
+      <h2>Contact Us</h2>
+
+      <style>
+        .contact-form fieldset {
+          border: none;
+          padding: 0;
+          margin: 0;
+        }
+      </style>
+
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <h2 style="margin-bottom: 1rem;">Contact Us</h2>
+      </div>
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        <fieldset>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label>Gender</label>
+          <div class="radio-row">
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+          </div>
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="">Select country</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Australia</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+
+          <button class="btn" type="submit">Send Message</button>
+        </fieldset>
+      </form>
+
+      <aside class="contact-info">
+        <h3>Professional Contact</h3>
+        <p>Email: hello@wanderly.example</p>
+        <p>Phone: +91 98765 43210</p>
+        <div class="socials">
+          <a href="#" class="icon">IG</a>
+          <a href="#" class="icon">FB</a>
+          <a href="#" class="icon">IN</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year3"></span> Wanderly Travels</p>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year3').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
