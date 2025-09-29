@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wanderly Travels</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="images/favicon.jpg" alt="logo" /> Wanderly</a>
+        
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"> 
+        <h1>Explore the world, one trip at a time</h1>
+        <p class="tagline">Curated travel guides • Local tips • Unforgettable experiences</p>
+        <a class="btn" href="#featured">Discover</a>
+      </div>
+      <img src="images/hero.jpg" alt="Hero travel banner" class="hero-img" />
+    </section>
+
+    <section id="featured" class="container featured fade-in">
+      <h2>Featured Destinations</h2>
+      <div class="dest-grid">
+        <article class="dest-card">
+          <img src="images/dest1.jpg" alt="Destination 1">
+          <div class="dest-content">
+            <h3>Riverview Escape</h3>
+            <p>Peaceful riverside town with scenic walks and cozy cafes.</p>
+            <a class="small-link" href="#">Read more →</a>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="images/dest2.jpg" alt="Destination 2">
+          <div class="dest-content">
+            <h3>Mountain Trails</h3>
+            <p>Hiking routes for beginners and experienced trekkers alike.</p>
+            <a class="small-link" href="#">Read more →</a>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img src="images/dest3.jpg" alt="Destination 3">
+          <div class="dest-content">
+            <h3>Sunset Beach</h3>
+            <p>Golden sands and spectacular sunsets — perfect weekend break.</p>
+            <a class="small-link" href="#">Read more →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Wanderly Travels • Created for Web Tech Project</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram" class="icon">IG</a>
+        <a href="#" aria-label="Facebook" class="icon">FB</a>
+        <a href="#" aria-label="LinkedIn" class="icon">IN</a>
+        <a href="#" aria-label="X/Twitter" class="icon">X</a>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
